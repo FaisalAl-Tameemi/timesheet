@@ -1,0 +1,24 @@
+<div>
+    <h1 data-i18n="TimeTrackingTitle"></h1>
+
+    <div class="row-fluid">
+        <div class="span9">
+            <tabset>
+                <tab heading="{{ 'TimeTrackingTabTitle' | i18n }}">
+                    <div>
+                        <jqdatepicker ng-model="date"></jqdatepicker>
+                    </div>
+                    <div>
+                        <table>
+                            <tr ng-repeat="slip in slips">
+                                <td>{{ slip.title }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </tab>
+                <tab heading="{{ 'TimeTrackingReportTabTitle' | i18n }}">More Static content</tab>
+            </tabset>
+        </div>
+        <div class="span3"></div>
+    </div>
+</div>
